@@ -1,4 +1,3 @@
-import Statistics: mean
 using Turing
 using StatsPlots
 
@@ -25,8 +24,7 @@ chains = sample(
 plot(chains)
 gelmandiag(chains)
 
-mean(chains[:𝒫cheat])
-summaries, _ = describe(chains);
+summarystats(chains)
 
 chains_params = Turing.MCMCChains.get_sections(chains, :parameters)
 genq = generated_quantities(model, chains_params)

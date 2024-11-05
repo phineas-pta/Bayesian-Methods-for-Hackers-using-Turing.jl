@@ -1,5 +1,4 @@
 import Random: seed!
-import Statistics: mean
 using Turing
 using StatsPlots
 seed!(123)
@@ -37,5 +36,4 @@ chains = sample(
 plot(chains)
 gelmandiag(chains)
 
-mean(chains[:Δ𝒫])
-summaries, _ = describe(chains);
+summarystats(chains)

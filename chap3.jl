@@ -1,4 +1,3 @@
-import Statistics: mean
 using Turing
 using StatsPlots
 
@@ -321,7 +320,7 @@ const data = [
 	z ~ filldist(Categorical([𝒫₁, 𝒫₂]), N)
 
 	# Draw observation from selected component
-	for i in 1:N
+	for i ∈ 1:N
 		if z[i] == 1
 			data[i] ~ Normal(μ₁, σ)
 		else
@@ -339,8 +338,10 @@ chains = sample(
 	num_warmup = 10000,
 	thinning = 5
 )
-plot(chains)
-gelmandiag(chains)
 
-mean(chains[:α]), mean(chains[:β])
-summaries, _ = describe(chains);
+tmp = chains[["μ₁", "μ₂", "σ", "𝒫₁"]];
+
+plot(tmp)
+gelmandiag(tmp)
+
+summarystats(tmp)

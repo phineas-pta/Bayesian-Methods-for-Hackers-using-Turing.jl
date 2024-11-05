@@ -37,4 +37,4 @@ plot(chains)
 gelmandiag(chains)
 
 mean(chains[:λ₁]), mean(chains[:λ₂]), mean(chains[:τ])
-summaries, _ = describe(chains);
+summarystats(chains)

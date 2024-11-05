@@ -1,4 +1,3 @@
-import Statistics: mean
 using Turing
 using StatsPlots
 
@@ -26,5 +25,4 @@ chains = sample(
 plot(chains)
 gelmandiag(chains)
 
-mean(chains[:α]), mean(chains[:β])
-summaries, _ = describe(chains);
+summarystats(chains)
