@@ -1,6 +1,5 @@
 import Statistics: mean
-using Turing
-using StatsPlots
+using Turing, StatsPlots
 
 const count_data = [
 	13, 24,  8, 24,  7, 35, 14, 11, 15, 11, 22, 22, 11, 57, 11, 19, 29,  6, 19, 12, 22, 12, 18, 72, 32,  9,  7, 13,

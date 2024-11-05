@@ -1,6 +1,5 @@
 import Random: seed!
-using Turing
-using StatsPlots
+using Turing, StatsPlots
 seed!(123)
 
 # those values are unknown

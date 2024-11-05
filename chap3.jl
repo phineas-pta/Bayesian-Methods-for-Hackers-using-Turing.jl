@@ -1,5 +1,4 @@
-using Turing
-using StatsPlots
+using Turing, StatsPlots
 
 const data = [
 	115.8567914166645352,

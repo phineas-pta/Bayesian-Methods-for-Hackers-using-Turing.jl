@@ -1,5 +1,4 @@
-using Turing
-using StatsPlots
+using Turing, StatsPlots
 
 const 𝒫coin = .5;
 𝒩tot = 100;
