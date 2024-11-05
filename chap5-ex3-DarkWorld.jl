@@ -51,7 +51,7 @@ chains = sample(
 	#= N chains =# 4;
 	num_warmup = 10000,
 	thinning = 5
-)
+) # may take hours
 plot(chains)
 gelmandiag(chains)
 
