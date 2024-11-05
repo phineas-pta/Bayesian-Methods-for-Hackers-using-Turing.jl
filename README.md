@@ -7,7 +7,9 @@ import Pkg
 Pkg.add(["Turing", "StatsPlots", "CSV", "JSON", "DataFrames"])
 ```
 
-advanced read: http://hakank.org/julia/turing/ or https://github.com/hakank/hakank/tree/master/julia/turing
+advanced read:
+- http://hakank.org/julia/turing/ or https://github.com/hakank/hakank/tree/master/julia/turing
+- https://storopoli.io/Bayesian-Julia/
 
 docs:
 - https://turinglang.org/docs/

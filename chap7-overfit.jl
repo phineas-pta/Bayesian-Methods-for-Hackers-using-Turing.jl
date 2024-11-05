@@ -27,3 +27,5 @@ plot(chains)
 gelmandiag(chains)
 
 summarystats(chains)
+
+predict(overfit_model(new_X, missing), chains) # VERY CRYPTIC ERROR

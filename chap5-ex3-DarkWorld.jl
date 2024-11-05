@@ -52,6 +52,10 @@ chains = sample(
 	num_warmup = 10000,
 	thinning = 5
 ) # may take hours
+
+# write("data/chain-file.jls", chains)
+# chains = read("data/chain-file.jls", Chains)
+
 plot(chains)
 gelmandiag(chains)
 
