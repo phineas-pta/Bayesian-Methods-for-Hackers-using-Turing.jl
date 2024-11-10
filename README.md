@@ -4,7 +4,7 @@ start julia with `--threads=auto`, check with `Threads.nthreads()`
 
 ```julia
 import Pkg
-Pkg.add(["Turing", "StatsPlots", "CSV", "JSON", "DataFrames"])
+Pkg.add(["Turing", "StatsPlots", "CSV", "JSON", "DataFrames", "PDMats"])
 ```
 
 advanced read:
